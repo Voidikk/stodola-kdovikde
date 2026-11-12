@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stodola KDOVÍKDE – Prostor pro vaše akce a svatby</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HORNÍ NAVIGAČNÍ LIŠTA -->
+    <nav class="navbar">
+        <a href="#" class="nav-logo">KDOVÍKDE</a>
+        <div class="nav-links">
+            <a href="#nabidka">Nabídka</a>
+            <a href="#lokalita">Lokalita</a>
+            <a href="#acovic">A co víc?</a>
+            <a href="#galerie">Galerie</a>
+            <a href="#kontakt" class="nav-btn">Kontakt</a>
+        </div>
+    </nav>
+
+    <!-- Úvodní sekce / Banner -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>„Život je jako bonboniéra. Nikdy nevíš, co dostaneš.“</h1>
+            <p class="subtitle">Naše stodola je ideální prostor pro pořádání oslav, večírků, teambuildingů nebo menších svateb o cca 50 lidech.</p>
+            <a href="#kontakt" class="btn">Chci si domluvit prohlídku</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Co vám můžeme nabídnout -->
+        <section id="nabidka" class="card">
+            <h2>CO VÁM MŮŽEME NABÍDNOUT</h2>
+            <p class="intro-text">Celý areál kombinuje venkovský půvab, funkční zázemí, pohodlí a soukromí.</p>
+            <ul class="features-list">
+                <li><strong>Dvoupatrový prostor:</strong> Kromě posezení disponuje menším tanečním parketem a proskleným výhledem na místní rybník.</li>
+                <li><strong>Vnitřní zázemí:</strong> Chlaďák na studený raut, bar s tříkohoutovým výčepním stojanem a prostorná lednice.</li>
+                <li><strong>Venkovní část:</strong> Posezení s jezírkem a vodopádem, příjemný zatravněný plácek a gril s otočným rožněm.</li>
+            </ul>
+        </section>
+
+        <!-- Kde nás najdete -->
+        <section id="lokalita" class="card">
+            <h2>KDE NÁS NAJDETE</h2>
+            <p>Stodola KDOVÍKDE se nachází na kraji vesnice Křižanovice, v srdci Železných hor.</p>
+            <p>Jen kousek odtud leží Křižanovická přehrada a malebné údolí řeky Chrudimky – Peklo, Krkanka a Strádovské peklo se zříceninou hradu Strádov.</p>
+        </section>
+
+        <!-- A co víc? -->
+        <section id="acovic" class="card highlight">
+            <h2>A CO VÍC?</h2>
+            <ul class="features-list">
+                <li>Po domluvě je možné objednat si na gril sele plemene Duroc z naší místní malé farmy.</li>
+                <li>K dispozici máme i vlastní šlechtěná selata Black Duroc s příměsí Přeštického prasete pro lepší kvalitu masa.</li>
+                <li>Připravujeme pro Vás i možnost ubytování.</li>
+            </ul>
+        </section>
+
+        <!-- VIDEO A PROKLIK DO FOTOGALERIE -->
+        <section id="galerie" class="card">
+            <h2>NAHLÉDNĚTE DO STODOLY</h2>
+            <p class="intro-text">Podívejte se na krátkou video prohlídku nebo si prolistujte fotky z celého areálu.</p>
+            
+            <div class="video-wrapper">
+                <!-- Video s ovládacími prvky (play/pause, zvuk, celá obrazovka) -->
+                <video class="showcase-video" controls playsinline poster="fotky/07.jpg">
+                    <source src="fotky/Stodola Bejrovi 3.0_compressed.mp4" type="video/mp4">
+                    Váš prohlížeč nepodporuje přehrávání videa.
+                </video>
+            </div>
+
+            <div class="gallery-action">
+                <button id="open-gallery-btn" class="btn btn-secondary">Otevřít fotogalerii (prolistovat fotky)</button>
+            </div>
+        </section>
+
+        <!-- Kontakt -->
+        <section id="kontakt" class="card contact-card">
+            <h2>CHCETE SI STODOLU PROHLÉDNOUT?</h2>
+            <p>Pořádáte oslavu nebo jinou akci a chtěli byste si stodolu nejdříve prohlédnout? Není problém! Napište nám, nebo zavolejte a na všem se domluvíme individuálně podle vašich představ a našich možností.</p>
+
+            <div class="contact-links">
+                <a href="mailto:bejrutt@centrum.cz" class="contact-item">
+                    📧 bejrutt@centrum.cz
+                </a>
+                <a href="tel:+420724076855" class="contact-item">
+                    📞 +420 724 076 855
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Stodola KDOVÍKDE. Všechna práva vyhrazena.</p>
+    </footer>
+
+    <!-- VYSKAKOVACÍ OKNO PRO PROHLÍŽENÍ FOTEK (LIGHTBOX) -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <button class="lightbox-prev">&#10094;</button>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="Zvětšená fotka">
+        <button class="lightbox-next">&#10095;</button>
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
